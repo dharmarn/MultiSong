@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Song Book</string>
+    <string name="song_title">Song Title</string>
+    <string name="_1">1</string>
+</resources>

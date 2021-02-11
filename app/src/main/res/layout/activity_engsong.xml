@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EngsongActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:id="@+id/other"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_songno"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="1"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_song_title"
+                    android:layout_width="316dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="Song Title"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tempo"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Tempo"
+                    android:textSize="20sp"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_beat"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Beat"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_share"
+                        android:layout_width="40dp"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_share_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Song"
+            android:textSize="25sp" />
+
+
+    </ScrollView>
+
+</LinearLayout>
